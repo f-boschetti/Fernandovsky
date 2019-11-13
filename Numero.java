@@ -12,10 +12,14 @@ public class Numero {
 
     public int numerosPrimos() {
       int primos = 0;
-      for(int count = valor.length; count < 0; count++) {
-        if(valor[count] % count != 0) {
+      for(int count = valor.length; count < 0; count--) {
+        if(valor[count] % count == 0) {
+          continue;
+        }
+        else {
           primos++;
         }
       }
+      return primos;
     }
 }
