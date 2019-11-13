@@ -6,6 +6,7 @@ class Main {
         int t = sf.nextInt();
         muitosInteiros v = new muitosInteiros(t);
         for(int j = 0; j <= t;j++){
+            System.out.println("Este é o ",j," numero");
             System.out.println("Qual numero você deseja guardar?");
             int n = sf.nextInt();
             System.out.println("Em qual indice você deseja guardar?");
